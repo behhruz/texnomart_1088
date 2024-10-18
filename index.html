@@ -4,16 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tailwind Carousel</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .carousel {
+            scroll-snap-type: x mandatory;
+        }
 
+        .carousel-item {
+            scroll-snap-align: center;
+        }
+
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .carousel {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
 </head>
 
-<body>
+<body class="bg-gray-100">
+    <div class="relative max-w-full mx-auto">
+        <button class="prev absolute z-10 top-1/2 -translate-y-1/2 left-2 bg-gray-300 p-2 rounded-full"
+            onclick="scrollCarousel(-1)">
+            &#10094;
+        </button>
+        <div class="carousel flex overflow-hidden gap-4 p-4">
+            <div
+                class="carousel-item w-[176px] h-[128px] flex flex-col relative  bg-[#F7F7F7] rounded-[20px] shadow-md min-w-[200px]">
+                <h3 class="w-[176px] h-[128px] mt-[6px] ml-[16px] font-roboto font-[500] text-lg">Смартфонлар</h3> <img
+                    class="absolute left-[24px] top-0" src="./assets/img/card1_is.png" alt="Smartphones"
+                    class="w-full h-auto rounded-lg">
+            </div>
+            <div
+                class="carousel-item w-[176px] h-[128px] flex flex-col relative  bg-[#F7F7F7] rounded-[20px] shadow-md min-w-[200px]">
+                <h3 class="w-[176px] h-[128px] mt-[6px] ml-[16px] font-roboto font-[500] text-lg">Ҳаво совутгичлар</h3> <img
+                    class="absolute left-[24px] top-0" src="./assets/img/card2_is.png" alt="Smartphones"
+                    class="w-full h-auto rounded-lg">
+            </div>
+            <div
+                class="carousel-item w-[176px] h-[128px] flex flex-col relative  bg-[#F7F7F7] rounded-[20px] shadow-md min-w-[200px]">
+                <h3 class="w-[176px] h-[128px] mt-[6px] ml-[16px] font-roboto font-[500] text-lg">Чангютгичлар</h3> <img
+                    class="absolute left-[24px] top-0" src="./assets/img/card3_is.png" alt="Smartphones"
+                    class="w-full h-auto rounded-lg">
+            </div>
+            <div
+                class="carousel-item w-[176px] h-[128px] flex flex-col relative  bg-[#F7F7F7] rounded-[20px] shadow-md min-w-[200px]">
+                <h3 class="w-[176px] h-[128px] mt-[6px] ml-[16px] font-roboto font-[500] text-lg">Музлатгичлар</h3> <img
+                    class="absolute left-[24px] top-0" src="./assets/img/card4_is.png" alt="Smartphones"
+                    class="w-full h-auto rounded-lg">
+            </div>
+            <div
+                class="carousel-item w-[176px] h-[128px] flex flex-col relative  bg-[#F7F7F7] rounded-[20px] shadow-md min-w-[200px]">
+                <h3 class="w-[176px] h-[128px] mt-[6px] ml-[16px] font-roboto font-[500] text-lg">Ноутбуклар</h3> <img
+                    class="absolute left-[24px] top-0" src="./assets/img/card5_is.png" alt="Smartphones"
+                    class="w-full h-auto rounded-lg">
+            </div>
+            <div
+                class="carousel-item w-[176px] h-[128px] flex flex-col relative  bg-[#F7F7F7] rounded-[20px] shadow-md min-w-[200px]">
+                <h3 class="w-[176px] h-[128px] mt-[6px] ml-[16px] font-roboto font-[500] text-lg">Телевизорлар</h3> <img
+                    class="absolute left-[24px] top-0" src="./assets/img/card6_is.png" alt="Smartphones"
+                    class="w-full h-auto rounded-lg">
+            </div>
+            <div
+                class="carousel-item w-[176px] h-[128px] flex flex-col relative  bg-[#F7F7F7] rounded-[20px] shadow-md min-w-[200px]">
+                <h3 class="w-[176px] h-[128px] mt-[6px] ml-[16px] font-roboto font-[500] text-lg">Қаҳва машиналари</h3> <img
+                    class="absolute left-[24px] top-0" src="./assets/img/card7_is.png" alt="Smartphones"
+                    class="w-full h-auto rounded-lg">
+            </div>
+            <div
+                class="carousel-item w-[176px] h-[128px] flex flex-col relative  bg-[#F7F7F7] rounded-[20px] shadow-md min-w-[200px]">
+                <h3 class="w-[176px] h-[128px] mt-[6px] ml-[16px] font-roboto font-[500] text-lg">Смартфонлар</h3> <img
+                    class="absolute left-[24px] top-0" src="./assets/img/card1_is.png" alt="Smartphones"
+                    class="w-full h-auto rounded-lg">
+            </div>
+            <div
+                class="carousel-item w-[176px] h-[128px] flex flex-col relative  bg-[#F7F7F7] rounded-[20px] shadow-md min-w-[200px]">
+                <h3 class="w-[176px] h-[128px] mt-[6px] ml-[16px] font-roboto font-[500] text-lg">Смартфонлар</h3> <img
+                    class="absolute left-[24px] top-0" src="./assets/img/card2_is.png" alt="Smartphones"
+                    class="w-full h-auto rounded-lg">
+            </div>
+            <div
+                class="carousel-item w-[176px] h-[128px] flex flex-col relative  bg-[#F7F7F7] rounded-[20px] shadow-md min-w-[200px]">
+                <h3 class="w-[176px] h-[128px] mt-[6px] ml-[16px] font-roboto font-[500] text-lg">Смартфонлар</h3> <img
+                    class="absolute left-[24px] top-0" src="./assets/img/card3_is.png" alt="Smartphones"
+                    class="w-full h-auto rounded-lg">
+            </div>
+            <div
+                class="carousel-item w-[176px] h-[128px] flex justify-center items-center   bg-[#F7F7F7] rounded-[20px] shadow-md min-w-[200px]">
+                <h3 class="w-[176px] h-[128px]  mt-[100px] ml-[35px] font-roboto font-[500] text-lg">Все категории-></h3> 
+            </div>
+        </div>
+        <button class="next absolute top-1/2 -translate-y-1/2 right-2 bg-gray-300 p-2 rounded-full"
+            onclick="scrollCarousel(1)">
+            &#10095;
+        </button>
 
+    </div>
 
+    <script>
+        function scrollCarousel(direction) {
+            const carousel = document.querySelector('.carousel');
+            const itemWidth = document.querySelector('.carousel-item').clientWidth + 16; // 16px gap between items
+            const scrollAmount = direction * itemWidth;
+            carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    </script>
     <script src="./script.js"></script>
-    <script src="./tailwind.config.js"></script>
 </body>
 
 </html>
